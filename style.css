@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  min-height: 100vh;
+  background-color: #bb7a34;
+}
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px 60px;
+}
+.match {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: #da944a;
+  transition: background-color 0.3s ease;
+  border-radius: 2rem;
+}
+
+.app {
+  width: 440px;
+  height: 440px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  perspective: 500px;
+  background-color: #976938;
+  justify-content: center;
+  padding-top: 30px;
+  padding-right: 2px;
+  border-radius: 2rem;
+}
+.match.matched {
+  background-color: #976938;
+}
+.emoji {
+  opacity: 0;
+  transition: opacity 1s;
+}
+.visible {
+  opacity: 1;
+}
